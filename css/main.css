@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 /*
 ===================
 Fonts
@@ -6,6 +12,31 @@ Fonts
 @font-face {
     font-family: "vazir";
     src: url("../fonts/vazir/Vazir-FD-WOL.woff") format("woff2"),
-      url("../fonts/vazir/Vazir-FD-WOL.woff") format("woff"),
-      url("../fonts/vazir/Vazir-FD-WOL.ttf") format("truetype");
-  }
+    url("../fonts/vazir/Vazir-FD-WOL.woff") format("woff"),
+    url("../fonts/vazir/Vazir-FD-WOL.ttf") format("truetype");
+}
+
+/*
+===================
+Variables
+===================
+*/
+:root {
+    --color-primary: #e2711d;
+    --color-primary-light: #ffb627;
+    --color-gray-1: #102a42;
+    --color-gray-5: #617d98;
+    --color-gray-10: #f1f5f8;
+    --color-white: #fff;
+    --font-family-primary: "vazir", sans-serif;
+}
+body {
+    font-family: var(--font-family-primary);
+    background: var(--color-white);
+    color: var(--color-gray-1);
+    text-align: right;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
