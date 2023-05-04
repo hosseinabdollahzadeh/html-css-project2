@@ -53,6 +53,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+h4 {
+    font-size: 1rem;
+}
+
 @media screen and (min-width: 800px) {
     h1 {
         font-size: 2rem;
@@ -60,6 +64,10 @@ h2 {
 
     h2 {
         font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
     }
 }
 
@@ -74,6 +82,12 @@ h2 {
 .btn:hover {
     background: var(--color-primary-light);
     color: var(--color-primary);
+}
+
+.clearfix::after, .clearfix::before {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 /*
@@ -112,4 +126,64 @@ Variables
     outline: 0.125rem solid var(--color-primary);
     outline-offset: 0.25rem;
     padding: 0.75rem 1.25rem;
+}
+
+/*content divider*/
+.content-divider {
+    height: 0.5rem;
+    background: linear-gradient(to left, var(--color-primary), var(--color-primary-light), var(--color-primary));
+}
+
+/*
+===================
+Features
+===================
+*/
+.features {
+    background: var(--color-gray-10);
+}
+
+.feature {
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5rem 0;
+    transition: var(--transition);
+}
+.feature:hover{
+    background: var(--color-white);
+    box-shadow: 0 2px 0 var(--color-primary);
+}
+.feature:hover .feature-icon{
+    transform: translateY(-5px);
+}
+.feature-icon {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1.25rem;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.feature-title {
+    margin-bottom: 1rem;
+}
+.feature-text {
+    color: var(--color-gray-5);
+    max-width: 17rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+    .feature {
+        float: right;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .feature {
+        float: right;
+        width: 25%;
+    }
 }
