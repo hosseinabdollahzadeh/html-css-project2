@@ -249,3 +249,63 @@ About
         width: 50%;
     }
 }
+
+/*
+===================
+Products
+===================
+*/
+.products{
+    background: var(--color-gray-10);
+}
+.products article{
+    padding: 2rem 0;
+}
+.products-text {
+    color: var(--color-gray-5);
+    max-width: 26rem;
+    margin-left: auto;
+}
+.btn-products{
+    margin-top: 1.5rem;
+}
+.product-cards .product{
+    margin-bottom: 2rem;
+}
+.product-img {
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+    height: 17rem;
+    object-fit: cover;
+}
+.product-price{
+    color: var(--color-primary);
+    direction: rtl;
+}
+@media screen and (min-width: 768px) {
+    .product{
+        float: right;
+        width: 50%;
+        padding-left: 2rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .product{
+        width: 33.3%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .products-info{
+        float: right;
+        width: 30%;
+    }
+    .product-cards {
+        float: left;
+        width: 70%;
+    }
+    .product{
+        padding-left: 0;
+        padding-right: 2rem;
+        margin-bottom: 0;
+    }
+}
